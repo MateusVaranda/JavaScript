@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos em DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4d4242;
+            color: #eeeeee;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+   <h1 class="est">Estudando DOM</h1>
+   <p>Árvore DOM</p>
+   <p>Aprenda sobre <strong>DOM</strong></p>
+   <div id="mens">Clique em mim</div>
+    <div>muito bem, eu estou aprendendo muito.</div>
+   <script>
+   /* var p1 = window.document.getElementsByTagName('p')[0]                     // seleciona o primeiro elemento p
+    window.document.write('Elementos P escrito e : ' + p1.innerText + '!')   // innerText pega o texto do elemento
+    p1.style.background = '#ff0000'                                         // altera o estilo do elemento selecionado
+    var p2 = window.document.getElementById('mens')                        // seleciona o elemento pelo ID
+    p2.style.background = '#0000ff'                                       // altera o estilo do elemento selecionado
+    var p3 = window.document.getElementsByClassName('est')               // seleciona o elemento pela classe
+    p3[0].style.color = 'green'                                         // altera o estilo do primeiro elemento da classe selecionada
+    */
+   var d = window.document.querySelector('div#mens') // seleciona o elemento div com ID mens
+   d.style.background = 'red'      // altera o estilo do elemento selecionado
+   </script>
+</body>
+</html>
